@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
+
     <title>AI European Travel Destinations Generator</title>
   </head>
   <body>
@@ -12,10 +14,10 @@
         <h1>AI European Travel Destination Generator</h1>
       </header>
       <div>
-        <form>
+        <form id="destination-generator">
           <input
             type="text"
-            placeholder="Enter the European country you would like to visit"
+            placeholder="Enter the European country you wish to visit"
             autofocus
             required
             autocomplete="off"
@@ -24,7 +26,7 @@
           <input type="submit" class="submit-button" />
         </form>
       </div>
-      <div id="generated-destination">The result will go here.</div>
+      <div id="generated-destination"></div>
       <footer>
         This AI project was coded by
         <a href="https://github.com/Keilikvist" target="_blank"
