@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
 
     <title>AI European Travel Destinations Generator</title>
@@ -22,11 +23,12 @@
             required
             autocomplete="off"
             class="instructions"
+            id="user-instructions"
           />
           <input type="submit" class="submit-button" />
         </form>
       </div>
-      <div id="generated-destination"></div>
+      <div class="generated-destination" id="destination"></div>
       <footer>
         This AI project was coded by
         <a href="https://github.com/Keilikvist" target="_blank"
