@@ -15,20 +15,23 @@
         <h1>AI European Travel Destination Generator</h1>
       </header>
       <div>
-        <form id="destination-generator">
-          <input
-            type="text"
-            placeholder="Enter the European country you wish to visit"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
+        <div class="form-container">
+          <form id="destination-generator">
+            <input
+              type="text"
+              placeholder="Enter the European country you wish to visit"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <small class="hint">i.e.: Spain, Norway, Romania</small>
+        </div>
       </div>
-      <div class="generated-destination" id="destination"></div>
+      <div class="generated-destination hidden" id="destination"></div>
       <footer>
         This AI project was coded by
         <a href="https://github.com/Keilikvist" target="_blank"

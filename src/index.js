@@ -17,9 +17,9 @@ function generateDestination(event) {
     "You are a well-travelled expert who is familiar with popular travel destinations within all European countries. Your mission is to generate a bulleted list of 4 popular destinations by following the user instructions. Please place a <br /> element between each bulleted item. Please sign 'SheCodes AI' inside a <strong> element at the bottom of the list.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-  console.log("Generating list");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
+  let destinationElement = document.querySelector("#destination");
+  destinationElement.classList.remove("hidden");
+  destinationElement.innerHTML = `<div class="generating">⏳Generating list of destinations found in ${instructionsInput.value}</div>`;
 
   axios.get(apiUrl).then(displayDestination);
 }
