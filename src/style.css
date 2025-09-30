@@ -43,6 +43,7 @@ form {
 .hint {
   line-height: 1.5;
   margin-top: 5px;
+  margin-left: 25px;
   font-size: 12px;
   opacity: 0.6;
   font-family: Verdana, Geneva, Tahoma, sans-serif;

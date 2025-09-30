@@ -19,7 +19,7 @@ function generateDestination(event) {
 
   let destinationElement = document.querySelector("#destination");
   destinationElement.classList.remove("hidden");
-  destinationElement.innerHTML = `<div class="generating">⏳Generating list of destinations found in ${instructionsInput.value}</div>`;
+  destinationElement.innerHTML = `<div class="generating">⏳Generating a list of destinations found in ${instructionsInput.value}</div>`;
 
   axios.get(apiUrl).then(displayDestination);
 }
